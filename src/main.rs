@@ -11,7 +11,7 @@ fn ignore_err<T>(result: Result<T, Error>) -> T {
     match result {
         Ok(r) => r,
         Err(_) => {
-            println!("{}", "I am the storm that is approaching");
+            println!("{}", "storm approaching");
             exit(1);
         }
     }
